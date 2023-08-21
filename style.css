@@ -7,10 +7,32 @@ html {
 body {
   overflow-x: hidden;
   align-content: center;
+}
+
+#card-title {
+  font-size: 50px;
+  font-weight: 800;
+}
+
+.text2,
+.text3 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.btn {
+  font-size: 50px;
+  border-radius: 15px;
+}
+
+section {
+  width: 100%;
   text-align: center;
+  background-color: pink;
 }
 
 #cardcontainer {
+  margin-top: 15px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -19,15 +41,20 @@ body {
   align-items: center;
   align-content: center;
   max-width: 100%;
+  font-size: 30px;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  margin: auto;
+  height: 380px;
 }
 
 div {
-  width: 200rem;
-  margin: 3px 3px;
+  width: 230rem;
+  margin: 5px 3px;
   border-radius: 10px;
-  align-text: center;
 }
 
 h1,
@@ -35,8 +62,143 @@ h3 {
   text-align: center;
 }
 
-@media screen and (width < 500px) {
+@media screen and (width < 600px) {
+  #cardcontainer {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #card-title {
+    width: 200px;
+    font-size: 35px;
+    font-weight: 700;
+  }
+
+  .text2,
+  .text3 {
+    width: 200px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .btn {
+    width: 200px;
+    font-size: 30px;
+    border-radius: 15px;
+  }
+
   div {
-    margin: 3px 0;
+    width: 100%;
+    align-items: center;
+    margin: 3px;
+  }
+}
+
+@media screen and (width >=600px) and (width < 900px) {
+  #cardcontainer {
+    width: 100%;
+    justify-content: center;
+  }
+
+  div {
+    width: 100%;
+    text-align: center;
+    align-items: center;
+    margin: 3px;
+  }
+}
+
+@media screen and (width>=900px) and (width <=1500px) {
+  #cardcontainer {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #card-title {
+    width: 300px;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .text2,
+  .text3 {
+    width: 300px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .btn {
+    width: 300px;
+    font-size: 35px;
+    border-radius: 15px;
+  }
+
+  div {
+    width: 49%;
+    align-items: center;
+  }
+}
+
+@media screen and (width>=1500px) and (width <=2000px) {
+  #cardcontainer {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #card-title {
+    width: 300px;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .text2,
+  .text3 {
+    width: 300px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .btn {
+    width: 300px;
+    font-size: 35px;
+    border-radius: 15px;
+  }
+
+  div {
+    width: 32%;
+    align-items: center;
+    margin: 8px;
+  }
+}
+
+@media screen and (width>2000px) {
+  #cardcontainer {
+    justify-content: center;
+    width: 100%;
+  }
+
+  #card-title {
+    width: 300px;
+    font-size: 40px;
+    font-weight: 800;
+  }
+
+  .text2,
+  .text3 {
+    width: 300px;
+    font-size: 25px;
+    font-weight: 600;
+  }
+
+  .btn {
+    width: 300px;
+    font-size: 35px;
+    border-radius: 15px;
+  }
+
+  div {
+    width: 24%;
+    align-items: center;
+    margin: 8px;
   }
 }
