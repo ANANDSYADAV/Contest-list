@@ -1,0 +1,42 @@
+html {
+  height: 100%;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  align-content: center;
+  text-align: center;
+}
+
+#cardcontainer {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  align-items: center;
+  align-content: center;
+  max-width: 100%;
+  justify-content: center;
+  margin: auto;
+}
+
+div {
+  width: 200rem;
+  margin: 3px 3px;
+  border-radius: 10px;
+  align-text: center;
+}
+
+h1,
+h3 {
+  text-align: center;
+}
+
+@media screen and (width < 500px) {
+  div {
+    margin: 3px 0;
+  }
+}
